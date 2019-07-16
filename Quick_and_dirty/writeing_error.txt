@@ -1,0 +1,14 @@
+I have the power - 30463.2870002
+I have the power - 30465.3770001
+I have the power - 30467.467
+I have the power - 30469.5570002
+I have the power - 30471.5870001
+I have the power - 30473.677
+I have the power - 30475.767
+I have the power - 30477.8570001
+I have the power - 30480.0570002
+
+Traceback (most recent call last):
+  File "Z:\User folders\Gregor Taylor\python_master\log_two_PM100s.py", line 56, in <module>
+    fileHandle = open ( FileName, 'a' )
+IOError: [Errno 13] Permission denied: 'Z:\\User folders\\Gregor Taylor\\python_master\\Mon_Oct_01_15_49_09_2018_power_log.txt'
