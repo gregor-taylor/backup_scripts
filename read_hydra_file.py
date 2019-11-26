@@ -75,9 +75,11 @@ elif TCSPC_type == 'BH':
                 pass
             else:
                 row_pxed = row[0].strip().split()
-                time_list.append(float(row_pxed[0])) 
-                channel_1_list.append(float(row_pxed[1]))
-    ns_per_bin = float(time_list[5])-float(time_list[4])
+                #time_list.append(float(row_pxed[0])) 
+                #removed above as no time just counts in this file???
+                channel_1_list.append(float(row_pxed[0]))
+    #ns_per_bin = float(time_list[5])-float(time_list[4])
+    ns_per_bin = 0.000203
 
 
 channel_1_array = np.asarray(channel_1_list)

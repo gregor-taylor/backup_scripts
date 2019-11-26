@@ -14,9 +14,9 @@ from tkinter.filedialog import askopenfilename
 from matplotlib import style
 style.use('fivethirtyeight_V2')
 
-ip_pwr = 0.28e-6
-atten = 73
-wav = 1550
+ip_pwr = 0.72e-6
+atten = 47.46
+wav = 2328
 h = 6.626070040e-34
 c = 2.99792458e8
 
@@ -91,7 +91,7 @@ ax1.legend(['DCR', 'PCR'], loc=2)
 plt.show()
                
 fig2, ax3=plt.subplots()
-ax3.plot(bias_array, eff_arr, 'o', markersize=3)
+ax3.plot(bias_array, eff_arr*phot_per_sec, 'o', markersize=3)
 ax3.set_ylabel('Efficiency')
 ax3.set_xlabel('Bias ($\mathrm{\mu}$A)')
 #plt.grid()
